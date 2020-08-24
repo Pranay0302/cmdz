@@ -1,9 +1,9 @@
 #! /bin/zsh
 
 # just to make your day even more brighter
-# stay safe and happy :)
+# stay safe and be happy :)
 
-
+cyan=`tput setaf 6`
 function compliments() 
 {
    tally=$RANDOM
@@ -11,19 +11,19 @@ function compliments()
 	let "tally %= $range"
 	if [ $tally -eq 0 ]
 	then
-		echo "You should be proud of yourself."
+		echo "$(tput setaf 6)You should be proud of yourself."
 	elif [ $tally -eq 1 ]
 	then
-		echo "Your perspective is refreshing."
+		echo "$(tput setaf 6)Your perspective is refreshing."
 	elif [ $tally -eq 2 ]
 	then
-		echo "You're one of a kind."
+		echo "$(tput setaf 6)You're one of a kind."
 	elif [ $tally -eq 3 ]
 	then
-		echo "You always make people smile."
+		echo "$(tput setaf 6)You always make people smile."
 	
 	elif [ $tally -eq 4 ]
 	then 
-		echo "You are awesome"
+		echo "$(tput setaf 6)You are awesome"
 	fi
 }
