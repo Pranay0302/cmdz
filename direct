@@ -1,14 +1,15 @@
 #! /bin/zsh
-
 # just to make your day even more brighter
 # stay safe and be happy :)
 
 cyan=`tput setaf 6`
+
 function compliments() 
 {
-   tally=$RANDOM
+    tally=$RANDOM  # returns a psuedorandom integer
 	range=5
 	let "tally %= $range"
+
 	if [ $tally -eq 0 ]
 	then
 		echo "$(tput setaf 6)You should be proud of yourself."
@@ -26,4 +27,5 @@ function compliments()
 	then 
 		echo "$(tput setaf 6)You are awesome"
 	fi
+
 }
