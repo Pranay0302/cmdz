@@ -1,6 +1,7 @@
 #! /bin/zsh
 # just to make your day even more brighter
 # stay safe and be happy :)
+# I'll be adding more commands soon
 
 cyan=`tput setaf 6`
 
