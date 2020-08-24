@@ -1,0 +1,29 @@
+#! /bin/zsh
+
+# just to make your day even more brighter
+# stay safe and happy :)
+
+
+function compliments() 
+{
+   tally=$RANDOM
+	range=5
+	let "tally %= $range"
+	if [ $tally -eq 0 ]
+	then
+		echo "You should be proud of yourself."
+	elif [ $tally -eq 1 ]
+	then
+		echo "Your perspective is refreshing."
+	elif [ $tally -eq 2 ]
+	then
+		echo "You're one of a kind."
+	elif [ $tally -eq 3 ]
+	then
+		echo "You always make people smile."
+	
+	elif [ $tally -eq 4 ]
+	then 
+		echo "You are awesome"
+	fi
+}
