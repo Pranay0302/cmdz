@@ -13,20 +13,20 @@ function compliments()
 
 	if [ $tally -eq 0 ]
 	then
-		echo "$(tput setaf 6)You should be proud of yourself."
+		echo "$cyan You should be proud of yourself."
 	elif [ $tally -eq 1 ]
 	then
-		echo "$(tput setaf 6)Your perspective is refreshing."
+		echo "$cyan Your perspective is refreshing."
 	elif [ $tally -eq 2 ]
 	then
-		echo "$(tput setaf 6)You're one of a kind."
+		echo "$cyan You're one of a kind."
 	elif [ $tally -eq 3 ]
 	then
-		echo "$(tput setaf 6)You always make people smile."
+		echo "$cyan You always make people smile."
 	
 	elif [ $tally -eq 4 ]
 	then 
-		echo "$(tput setaf 6)You are awesome"
+		echo "$cyan You are awesome"
 	fi
 
 }
