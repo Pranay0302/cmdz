@@ -1,14 +1,23 @@
 #! /bin/zsh
-# just to make your day even more brighter
-# stay safe and be happy :)
 # I'll be adding more commands soon
 
 cyan=`tput setaf 6`
 
+
+
+# for displaying System related process information
+
+function showSys() 
+{
+	 ps auxw | grep System
+}
+
+# some compliments
+
 function compliments() 
 {
     tally=$RANDOM  # returns a psuedorandom integer
-	range=5
+	range=15
 	let "tally %= $range"
 
 	if [ $tally -eq 0 ]
@@ -26,15 +35,38 @@ function compliments()
 	
 	elif [ $tally -eq 4 ]
 	then 
-		echo "$cyan You are awesome"
+		echo "$cyan You are awesome."
+		elif [ $tally -eq 5 ]
+	then 
+		echo "$cyan Nothing can stop you."
+		elif [ $tally -eq 6 ]
+	then 
+		echo "$cyan You have the best sense of style."
+		elif [ $tally -eq 7 ]
+	then 
+		echo "$cyan You are a great example to others."
+		elif [ $tally -eq 8 ]
+	then 
+		echo "$cyan You are stunning."
+		elif [ $tally -eq 9 ]
+	then 
+		echo "$cyan You’re a gift to everyone you meet."
+		elif [ $tally -eq 10 ]
+	then 
+		echo "$cyan You’ve got great leadership skills."
+		elif [ $tally -eq 11 ]
+	then 
+		echo "$cyan You have the best ideas."
+		elif [ $tally -eq 12 ]
+	then 
+		echo "$cyan You really seem to know who you are. I admire that."
+		elif [ $tally -eq 13 ]
+	then 
+		echo "$cyan Keep smiling."
+		elif [ $tally -eq 14 ]
+	then 
+		echo "$cyan You can do it."
 	fi
 
 }
 
-
-# for displaying System related process information
-
-function showSys() 
-{
-	 ps auxw | grep System
-}
