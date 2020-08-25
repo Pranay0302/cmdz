@@ -77,7 +77,6 @@ function compliments()
  # Gets the users information.                               #
  # The account details.                                      #
  # Total no. of parameters: $#                               #
- # Returns 0 on success	                                     #
  # --------------------------------------------------------- #
 
 function GitDeets() 
@@ -105,7 +104,7 @@ function GitDeets()
  '
  	echo "$yellow ###################################################"
 
-exit 0
+# exit 0
 
 }
 	
