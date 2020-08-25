@@ -2,6 +2,8 @@
 # I'll be adding more commands soon
 
 cyan=`tput setaf 6`
+red=`tput setaf 1`
+yellow=`tput setaf 3`
 
 
 
@@ -69,4 +71,45 @@ function compliments()
 	fi
 
 }
+
+
+ # --------------------------------------------------------- #
+ # Gets the users information.                               #
+ # The account details.             						 #
+ # Total no. of parameters: $#                               #
+ # Returns 0 on success										 #
+ # --------------------------------------------------------- #
+
+function GitDeets() 
+{
+	if [ $# -ne 1 ]; then
+    echo "usage: $0 <username>"
+    # exit 1
+    fi
+
+	echo "$yellow ###################################################"
+
+	curl -s "https://api.github.com/users/$1" | awk -F '"' '
+ 
+   	/\"name\":/ {
+  	 print " - Github User -> "$4"."
+  	 }
+
+   	/\"created_at\":/ {
+   	print " - Account was created on "$4"."
+   	 }
+
+   	/\"updated_at\":/ {
+   	print " - Account was updated on "$4"."
+   	 }
+
+ '
+ 	echo "$yellow ###################################################"
+
+exit 0
+
+}
+	
+
+
 
