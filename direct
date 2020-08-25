@@ -75,9 +75,9 @@ function compliments()
 
  # --------------------------------------------------------- #
  # Gets the users information.                               #
- # The account details.             						 #
+ # The account details.             	                     #
  # Total no. of parameters: $#                               #
- # Returns 0 on success										 #
+ # Returns 0 on success				             #
  # --------------------------------------------------------- #
 
 function GitDeets() 
