@@ -1,0 +1,3 @@
+#### GitDeets
+
+##### Usage: GitDeets <username>
