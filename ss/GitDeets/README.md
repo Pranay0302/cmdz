@@ -1,3 +1,3 @@
 #### GitDeets
 
-##### Usage: GitDeets <username>
+##### Usage: GitDeets [username]
