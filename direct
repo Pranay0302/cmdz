@@ -77,7 +77,7 @@ function compliments()
  # Gets the users information.                               #
  # The account details.                                      #
  # Total no. of parameters: $#                               #
- # --------------------------------------------------------- #
+ # --------------------------------------------------------- # 
 
 function GitDeets() 
 {
@@ -107,7 +107,12 @@ function GitDeets()
 # exit 0
 
 }
-	
 
+ # --------------------------------------------------------- #
+ # Gets the tcp packets                                      #
+ # --------------------------------------------------------- # 
 
-
+function tcp() 
+{
+	netstat | awk '/^tcp/' 
+}
