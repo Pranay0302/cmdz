@@ -116,3 +116,12 @@ function tcp()
 {
 	netstat | awk '/^tcp/' 
 }
+
+ # --------------------------------------------------------- #
+ # Gets the udp packets (udp4,udp6 and udp46)                #
+ # --------------------------------------------------------- # 
+
+function udp() 
+{
+	netstat | awk '/^udp/'
+}
