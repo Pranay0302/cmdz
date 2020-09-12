@@ -125,3 +125,11 @@ function udp()
 {
 	netstat | awk '/^udp/'
 }
+
+ # --------------------------------------------------------- #
+ # displaying current network configuration                  #
+ # --------------------------------------------------------- # 
+function mip()
+{
+	curl ifconfig.me/all
+}
