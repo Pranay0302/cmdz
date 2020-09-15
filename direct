@@ -133,3 +133,13 @@ function mip()
 {
 	curl ifconfig.me/all
 }
+
+
+ # --------------------------------------------------------- #
+ # for displaying standard ports                             #
+ # --------------------------------------------------------- # 
+
+function ports()
+{
+	less /etc/services
+}
