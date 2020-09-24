@@ -144,6 +144,10 @@ function ports()
 	less /etc/services
 }
 
+ # --------------------------------------------------------- #
+ # diplaying anime ascii art                                 #
+ # --------------------------------------------------------- # 
+
 function anime(){
 	# curl can also be used here
 	wget -q -O- "http://www.ascii-art.de/ascii/ab/anime.txt" |pv -q -L 4000 # baud rate (bits per second)
