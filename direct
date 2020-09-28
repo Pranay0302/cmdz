@@ -24,7 +24,7 @@ function compliments()
 
 	if [ $tally -eq 0 ]
 	then
-		echo "$cyan You should be proud of yourself."
+		echo "$red You should be proud of yourself."
 	elif [ $tally -eq 1 ]
 	then
 		echo "$cyan Your perspective is refreshing."
@@ -37,7 +37,7 @@ function compliments()
 	
 	elif [ $tally -eq 4 ]
 	then 
-		echo "$cyan You are awesome."
+		echo "$red You are awesome."
 		elif [ $tally -eq 5 ]
 	then 
 		echo "$cyan Nothing can stop you."
@@ -49,7 +49,7 @@ function compliments()
 		echo "$cyan You are a great example to others."
 		elif [ $tally -eq 8 ]
 	then 
-		echo "$cyan You are stunning."
+		echo "$red You are stunning."
 		elif [ $tally -eq 9 ]
 	then 
 		echo "$cyan You’re a gift to everyone you meet."
@@ -58,7 +58,7 @@ function compliments()
 		echo "$cyan You’ve got great leadership skills."
 		elif [ $tally -eq 11 ]
 	then 
-		echo "$cyan You have the best ideas."
+		echo "$red You have the best ideas."
 		elif [ $tally -eq 12 ]
 	then 
 		echo "$cyan You really seem to know who you are. I admire that."
@@ -78,6 +78,7 @@ function compliments()
  # The account details.                                      #
  # Total no. of parameters: $#                               #
  # --------------------------------------------------------- # 
+
 
 function GitDeets() 
 {
@@ -147,6 +148,8 @@ function ports()
  # --------------------------------------------------------- #
  # diplaying anime ascii art                                 #
  # --------------------------------------------------------- # 
+
+
 
 function anime(){
 	# curl can also be used here
